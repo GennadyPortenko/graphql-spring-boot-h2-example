@@ -1,0 +1,17 @@
+# GraphQL schema
+
+type Record {
+	recordId: ID!,
+	name: String,
+}
+
+type Query {
+    records: [Record]
+	recordById(id: ID): Record
+	recordsByName(name: String): [Record]
+	recordsByNameLike(name: String): [Record]
+}
+
+type Mutation {
+	createRecord(name: String!): Record
+}

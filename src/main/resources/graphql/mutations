@@ -1,0 +1,12 @@
+# mutations examples
+localhost:8080/graphiql
+
+mutation {
+  createRecord (
+    name: "Fooooo"
+  ) {
+    recordId
+    name
+  }
+}
+

@@ -1,0 +1,19 @@
+# queries examples
+localhost:8080/graphiql
+
+{
+  recordsByName(name: "Bar") {
+    recordId
+    name
+  }
+}
+
+
+{
+  records {
+    recordId
+    name
+  }
+}
+
+
